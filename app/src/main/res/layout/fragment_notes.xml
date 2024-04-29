@@ -1,29 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80C8F3"
+    android:padding="10sp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.notes.NotesFragment"
-    android:background="@drawable/layback">
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/text_notes"
+
+
+    <ImageButton
+        android:id="@+id/notes_imgbutton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/title_notes"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
+        android:src="@drawable/first_year"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#80C8F3"
+        android:elevation="5sp"
+        android:scaleType="fitCenter"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/notes_imgbutton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_year"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="#80C8F3"
+        android:elevation="5sp"
+        android:scaleType="fitCenter"/>
+
+
+    <ImageButton
+        android:id="@+id/notes_imgbutton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/thir_year"
+        android:background="#80C8F3"
+        android:elevation="5sp"
+        android:scaleType="fitCenter"/>
+</LinearLayout>
